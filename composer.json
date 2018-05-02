@@ -1,0 +1,9 @@
+{
+	"require": {
+		"php": ">=7.0.0",
+		"doctrine/cache": "1.*",
+		"monolog/monolog": "1.*",
+		"smarty/smarty": "~3.1",
+		"asheng99012/qe": "dev-master"
+	}
+}
