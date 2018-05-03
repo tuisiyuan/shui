@@ -3,6 +3,7 @@
 
 /vendor
 /runtime
+/config/database.php
 **.composer.lock
 **.idea
 **.iml
