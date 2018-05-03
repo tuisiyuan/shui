@@ -14,6 +14,8 @@ return [
         "compileDir" => ROOT . "/runtime/smarty"
     ],
     "reoutes" => [
+        'admin' => 'Controller\Admin\IndexController@index',
+        'index' => 'Controller\IndexController@index',
         "user-info" => 'Controller\UserController@getUserInfo',
         "404" => 'Controller\IndexController@notFound',
         "error" => 'Controller\IndexController@error',

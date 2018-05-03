@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: ashen
- * Date: 2017-11-27
- * Time: 15:34
- */
 
 $loader = require __DIR__ . "/../vendor/autoload.php";
 define("ROOT", dirname(__DIR__));
