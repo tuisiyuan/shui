@@ -44,7 +44,7 @@
 
             <ul class="submenu">
                 <li>
-                    <a href="elements.html">
+                    <a href="/admin/category/index">
                         <i class="icon-double-angle-right"></i>
                         分类管理
                     </a>

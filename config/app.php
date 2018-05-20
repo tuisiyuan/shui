@@ -15,10 +15,11 @@ return [
     ],
     "reoutes" => [
         'admin' => 'Controller\Admin\IndexController@index',
-        'index' => 'Controller\IndexController@index',
+        'upload' => 'Controller\UploaderController@upload',
+        //'index' => 'Controller\IndexController@index',
         "user-info" => 'Controller\UserController@getUserInfo',
-        "404" => 'Controller\IndexController@notFound',
-        "error" => 'Controller\IndexController@error',
+        //"404" => 'Controller\IndexController@notFound',
+        //"error" => 'Controller\IndexController@error',
     ],
     "filters" => [
         //"" => "Controller\IndexController"
