@@ -7,37 +7,55 @@
     <meta name="description" content="金林苑提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- basic styles -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
 
     <!--[if IE 7]>
-    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
     <![endif]-->
 
     <!-- page specific plugin styles -->
 
     <!-- ace styles -->
 
-    <link rel="stylesheet" href="assets/css/ace.min.css" />
-    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="/assets/css/ace-skins.min.css" />
 
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+    <![endif]-->
+
+    <!--[if !IE]> -->
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script src="/assets/js/jquery-1.10.2.min.js"></script>
     <![endif]-->
 
     <!-- inline styles related to this page -->
 
     <!-- ace settings handler -->
 
-    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="/assets/js/ace-extra.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <!--
+    <script src="/assets/js/jquery.uploader.min.js?v=<{time()}>"></script>
+    <script src="/assets/js/jquery.uploader.ui.js?v=<{time()}>"></script>
+    <script src="/assets/js/jquery.uploader.config.js?v=<{time()}>"></script>
+    <link rel="stylesheet" href="/assets/css/jquery.uploader.min.css?v=<{time()}>" />
+    -->
+
 </head>
 
 <body>
@@ -51,7 +69,7 @@
             <a href="#" class="navbar-brand">
                 <small>
                     <i class="icon-leaf"></i>
-                    ACE后台管理系统
+                    water后台管理系统
                 </small>
             </a><!-- /.brand -->
         </div><!-- /.navbar-header -->
@@ -209,7 +227,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+                                <img src="/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
                                 <span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Alex:</span>
@@ -226,7 +244,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+                                <img src="/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
                                 <span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Susan:</span>
@@ -243,7 +261,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+                                <img src="/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
                                 <span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Bob:</span>
@@ -266,10 +284,10 @@
                         </li>
                     </ul>
                 </li>
-
+<input type="hidden" id="static_domain" value="http://static.water.test/" />
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+                        <img class="nav-user-photo" src="/assets/avatars/user.jpg" alt="Jason's Photo" />
                         <span class="user-info">
 									<small>欢迎光临,</small>
 									Jason
