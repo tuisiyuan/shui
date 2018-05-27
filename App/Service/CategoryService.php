@@ -14,4 +14,14 @@ class CategoryService
     {
         return $this->categoryDao->getCategoryRow($params);
     }
+
+    public function getCategoryFetch(array $params)
+    {
+        return $this->categoryDao->getCategoryFetch($params);
+    }
+
+    public function getCategoryCount(array $params)
+    {
+        return $this->categoryDao->getCategoryCount($params);
+    }
 }
