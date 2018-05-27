@@ -104,6 +104,12 @@
 
         createHtml();
         bindEvent();
+
+        $.each($(this).val().split(','), function (i, val) {
+            if (val.size() > 0) {
+                createImg(val);
+            }
+        })
     };
 
     $('[qplugin="uploadImg"]').each(function () {

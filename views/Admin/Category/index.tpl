@@ -26,7 +26,6 @@
                     <li class="active">分类管理</li>
                 </ul>
             </div>
-
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
@@ -39,98 +38,48 @@
                                 <table id="sample-table-2" class="table table-striped table-bordered table-hover">
                                     <thead>
                                     <tr>
-                                        <th class="center">
-                                            <label>
-                                                <input type="checkbox" class="ace" />
-                                                <span class="lbl"></span>
-                                            </label>
-                                        </th>
-                                        <th>Domain</th>
-                                        <th>Price</th>
-                                        <th class="hidden-480">Clicks</th>
-
-                                        <th>
-                                            <i class="icon-time bigger-110 hidden-480"></i>
-                                            Update
-                                        </th>
-                                        <th class="hidden-480">Status</th>
-
-                                        <th></th>
+                                        <th>排序</th>
+                                        <th>分类名称</th>
+                                        <th>分类图片</th>
+                                        <th>状态</th>
+                                        <th>创建时间</th>
+                                        <th>操作</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <tr>
-                                        <td class="center">
-                                            <label>
-                                                <input type="checkbox" class="ace" />
-                                                <span class="lbl"></span>
-                                            </label>
-                                        </td>
-
-                                        <td>
-                                            <a href="#">app.com</a>
-                                        </td>
-                                        <td>$45</td>
-                                        <td class="hidden-480">3,330</td>
-                                        <td>Feb 12</td>
-
-                                        <td class="hidden-480">
-                                            <span class="label label-sm label-warning">Expiring</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                                                <a class="blue" href="#">
-                                                    <i class="icon-zoom-in bigger-130"></i>
-                                                </a>
-
-                                                <a class="green" href="#">
-                                                    <i class="icon-pencil bigger-130"></i>
-                                                </a>
-
-                                                <a class="red" href="#">
-                                                    <i class="icon-trash bigger-130"></i>
-                                                </a>
-                                            </div>
-
-                                            <div class="visible-xs visible-sm hidden-md hidden-lg">
-                                                <div class="inline position-relative">
-                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown">
-                                                        <i class="icon-caret-down icon-only bigger-120"></i>
-                                                    </button>
-
-                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
-                                                        <li>
-                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="icon-zoom-in bigger-120"></i>
-																				</span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="icon-edit bigger-120"></i>
-																				</span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="icon-trash bigger-120"></i>
-																				</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <{if isset($model.list) && count($model.list) gt 0 }>
+                                        <{foreach $model.list as $vModel}>
+                                            <tr>
+                                                <td>
+                                                    <a href="###" style="text-align:center;vertical-align:center;display: block;width: 100%;height: 100%;"><{$vModel.sort}></a>
+                                                </td>
+                                                <td><{$vModel.cateName}></td>
+                                                <td><img style="max-width: 100px;max-height: 50px;" class="img-rounded" src="<{$vModel.cateImg}>" /></td>
+                                                <td><{$vModel.status}></td>
+                                                <td><{$vModel.created}></td>
+                                                <td>
+                                                    <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+                                                        <a class="green" href="/admin/category/edit?id=<{$vModel.id}>">
+                                                            <i class="icon-edit bigger-130"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <{/foreach}>
+                                    <{/if}>
                                     </tbody>
                                 </table>
+                                <div class="col-sm-6 pull-right">
+                                    <div class="pull-right">
+                                        <{if $model.pagination}>
+                                            <{$model.pagination}>
+                                        <{/if}>
+                                    </div>
+                                    </ul>
+
+                                </div><!-- /span -->
+                            </div><!-- /row -->
                             </div>
                         </div>
                     </div>

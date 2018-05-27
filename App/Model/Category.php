@@ -36,6 +36,11 @@ class Category extends ModelBase
      */
     public $cateImg;
 
+    /**排序
+     * @var int
+     */
+    public $sort;
+
     /**
      * 状态
      * @var integer
