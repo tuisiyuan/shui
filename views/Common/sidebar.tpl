@@ -51,6 +51,13 @@
                 </li>
 
                 <li>
+                    <a href="/admin/brand/index">
+                        <i class="icon-double-angle-right"></i>
+                        品牌管理
+                    </a>
+                </li>
+
+                <li>
                     <a href="buttons.html">
                         <i class="icon-double-angle-right"></i>
                         属性管理
@@ -77,49 +84,6 @@
                         售卖商品管理
                     </a>
                 </li>
-
-                <!-- <li>
-                    <a href="#" class="dropdown-toggle">
-                        <i class="icon-double-angle-right"></i>
-
-                        三级菜单
-                        <b class="arrow icon-angle-down"></b>
-                    </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">
-                                <i class="icon-leaf"></i>
-                                第一级
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-pencil"></i>
-
-                                第四级
-                                <b class="arrow icon-angle-down"></b>
-                            </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-plus"></i>
-                                        添加产品
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-eye-open"></i>
-                                        查看商品
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li> -->
             </ul>
         </li>
     </ul><!-- /.nav-list -->
