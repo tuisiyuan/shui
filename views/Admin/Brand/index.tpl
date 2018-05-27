@@ -23,15 +23,15 @@
                         <i class="icon-home home-icon"></i>
                         <a href="/admin">首页</a>
                     </li>
-                    <li class="active">分类管理</li>
+                    <li class="active">品牌管理</li>
                 </ul>
             </div>
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
                             <div class="table-header">
-                                分类管理
-                                <span class="pull-right"><a href="/admin/category/edit" class="white">添加分类</a>&nbsp;&nbsp;</span>
+                                品牌管理
+                                <span class="pull-right"><a href="/admin/brand/edit" class="white">添加品牌</a>&nbsp;&nbsp;</span>
                             </div>
 
                             <div class="table-responsive">
@@ -39,8 +39,8 @@
                                     <thead>
                                     <tr>
                                         <th>排序</th>
-                                        <th>分类名称</th>
-                                        <th>分类图片</th>
+                                        <th>品牌名称</th>
+                                        <th>品牌图片</th>
                                         <th>状态</th>
                                         <th>创建时间</th>
                                         <th>操作</th>
@@ -54,13 +54,13 @@
                                                 <td>
                                                     <a href="###" style="text-align:center;vertical-align:center;display: block;width: 100%;height: 100%;"><{$vModel.sort}></a>
                                                 </td>
-                                                <td><{$vModel.cateName}></td>
-                                                <td><img style="max-width: 100px;max-height: 50px;" class="img-rounded" src="<{$vModel.cateImg}>" /></td>
+                                                <td><{$vModel.brandName}></td>
+                                                <td><img style="max-width: 100px;max-height: 50px;" class="img-rounded" src="<{$vModel.brandImg}>" /></td>
                                                 <td><{$vModel.status}></td>
                                                 <td><{$vModel.created}></td>
                                                 <td>
                                                     <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                                                        <a class="green" href="/admin/category/edit?id=<{$vModel.id}>">
+                                                        <a class="green" href="/admin/brand/edit?id=<{$vModel.id}>">
                                                             <i class="icon-edit bigger-130"></i>
                                                         </a>
                                                     </div>
